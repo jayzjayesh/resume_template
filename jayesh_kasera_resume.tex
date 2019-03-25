@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemz}[1]{
+  \item\small{
+    \textbf{#1}
+  }
+}
+\newcommand{\aoi}[1]{
+  \item\small{
+    \text{#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItemz}[1]{\resumeItemz{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/jayesh-kasera-565425148/}{\Large Jayesh Kasera}} & Email : \href{mailto:jshkasera0@gmail.com}{jshkasera0@gmail.com}\\
+  \nolinkurl{https://github.com/jayzjayesh}& Mobile : +91-8827707653 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ramrao Adik Institute of Technology}{Navi Mumbai}
+      {Bachelor of Engineering in Computer Science;  CGPA: 8.2/10}{Jul. 2015 -- Present}
+    \resumeSubheading
+      {New Digamber Public School}{Indore}
+      {Central Board of Secondary Education Class 12th Examination;  Percentage: 88.8\%}{Apr. 2015}
+       \resumeSubheading
+      {New Digamber Public School}{Indore}
+      {All India Secondary School Examination Class 10th;  CGPA: 10/10}{Apr. 2013}
+  \resumeSubHeadingListEnd
+  
+%-----------Academic Achievements-----------------
+
+
+\section{Academic Achievements}
+   \resumeSubHeadingListStart
+    \resumeSubItemz{Awarded CBSE MERIT STUDENT 2013 in Class 10th for 10/10 CGPA}
+    \resumeSubItemz{Secured 4th position in TCS IT WIZ 2014 Indore}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Play Games 24x7}{Mumbai}
+      {Summer Intern}{Jul 2018 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Rummy Circle}
+          {Worked as an intern in the tech team on the product Rummy Circle . Worked on monitoring and development of RESTful API's. Used the response time as measure of performance of API in GraphiteDB with visualisation in Grafana.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Black Forest India}{Mumbai}
+      {Remote Intern}{Jan 2017 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem{Graphic and Web Design}
+        {Worked as a graphic and web design intern making designs for posters,book covers and social media posts along with web UI components of their website.}
+          
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Peer to Peer Video Streaming}
+      { Developed a peer to peer video streaming web application which serves the data over WebRTC data channel along with go-signalr for client side communication of video data fragments. The P2P network was established using hls.js along with frontend developed on Vue.js.}
+    \resumeSubItem{Todo App}
+      {Developed a fast easy to go todo app with cross user communication. User can create weekly tasks and get notifications for it. Used HTML,CSS and Javascript for frontend with Node and Express for routing request and Firebase to push notifications.}
+    \resumeSubItem{Complaint and Feedback Management System}
+      {Built a complaint and feedback management system on Django with SQLite as backend. Users could post complaints and feedbacks on any relevant topic along with likes and comments from other users. It had superuser,admin privileges.}
+    \resumeSubItem{Groupify}
+      { Built a group chat and board application on Django in which the users could make groups and talk on any relevant topic with their identity anonymous from other users.}
+  \resumeSubHeadingListEnd
+
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+   \textbf{Languages}{:C,C++,Java,Javascript,Python,R}
+    \hfill     \textbf{Technologies}{:Django,React.js(Beginner),Node.js} \hfill     \textbf{Databases}{:MySQL,MongoDB}
+    \hfill     \textbf{Visualisation}{:Adobe Photoshop,D3.js,matplotlib}
+  }
+\resumeSubHeadingListEnd
+
+\section{Areas of Interest}
+    \aoi{Machine Learning, Data Science, Computer Vision,Data Structures and Algorithms, Photoshop Scripting, P2P Networks}
+  
+
+
+%-------------------------------------------
+\end{document}
